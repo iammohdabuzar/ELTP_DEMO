@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="demolist.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}" showHeader="false">
+                    <content>
+                        <List id="idList" items="{path: 'mProducts>/ProductCollection', sorter: {
+                            path: 'SupplierName',
+                            descending: false,
+                            group: true
+                        }}">
+                            <headerToolbar>
+                                <OverflowToolbar id="oftb">
+                                    <Text id="titleText" text="Product List" />
+                                    <ToolbarSpacer id="tbs" />
+                                    <SearchField id="sf" width="50%" search="onSearchList" />
+                                </OverflowToolbar>
+                            </headerToolbar>
+                            <StandardListItem id="sli" title="{mProducts>ProductId}" description="{mProducts>Name}" type="Navigation" press="onPressProduct"/>
+                        </List>
+                    </content>
+                    <footer>
+                        <Toolbar id="listFooter">
+                            <ToolbarSpacer id="tbFooter" />
+                            <Button id="nxtFooter" text="Next" press="onPressNext"></Button>
+                        </Toolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
