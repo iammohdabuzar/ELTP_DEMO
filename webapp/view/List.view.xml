@@ -26,8 +26,9 @@
                     </content>
                     <footer>
                         <Toolbar id="listFooter">
+                            <Button id="dateTime" text="Date Time" press="onPressDateTime" type="Emphasized" />
                             <ToolbarSpacer id="tbFooter" />
-                            <Button id="nxtFooter" text="Next" press="onPressNext"></Button>
+                            <Button id="nxtFooter" text="Next" press="onPressNext" type="Emphasized" />
                         </Toolbar>
                     </footer>
                 </Page>
