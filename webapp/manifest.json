@@ -120,14 +120,14 @@
       "targets": {
         "TargetList": {
           "viewType": "XML",
-          "transition": "slide",
+          "transition": "flip",
           "clearControlAggregation": false,
           "viewId": "List1",
           "viewName": "List"
         },
         "TargetDetail": {
             "viewType": "XML",
-            "transition": "slide",
+            "transition": "flip",
             "viewId": "Detail",
             "viewName": "Detail"
         }
