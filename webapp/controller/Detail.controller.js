@@ -29,7 +29,8 @@ sap.ui.define(
           var mProducts = that.getOwnerComponent().getModel("mProducts");
           var aProducts = mProductModel.getProperty("/ProductCollection");
       },
-      
+
+      // this is also a function
       onPressBack: function () {
         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
         oRouter.navTo("RouteList");
