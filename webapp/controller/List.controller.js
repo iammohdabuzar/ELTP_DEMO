@@ -33,7 +33,7 @@ sap.ui.define([
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                 oRouter.navTo("DetailView" , {ProductId: "0"});
             },
-
+            // this is a function
             onPressProduct:function (oEvent) {
 
                 var that = this;
