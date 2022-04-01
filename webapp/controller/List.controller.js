@@ -9,7 +9,7 @@ sap.ui.define([
      */
     function (Controller, Filter, FilterOperator, MessageBox) {
         "use strict";
-
+// making changes & push it to git
         return Controller.extend("demolist.controller.List", {
             onInit: function () {
 
@@ -35,7 +35,7 @@ sap.ui.define([
                 oRouter.navTo("DetailView" , {ProductId: "0"});
             },
             // this is a function
-            onPressProduct:function (oEvent) {
+            onPressProduct: function (oEvent) {
 
                 var that = this;
                 var sSelectedProduct = oEvent.getSource().getBindingContext("mProducts").getObject();
